@@ -7,11 +7,11 @@ export default function Header() {
 
   return (
     <header className="p-3 px-4 flex flex-col">
-      <div className="flex flex-row gap-2 flex-nowrap">
+      <div className="flex flex-row gap-12 flex-nowrap">
         <MenuButton onClick={() => setMenuOpen(!menuOpen)} />
 
         <h1 className="font-honeypirls_regular text-5xl">
-            Jennelle's Portfolio
+          Jennelle's Portfolio
         </h1>
       </div>
 
