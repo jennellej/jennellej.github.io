@@ -1,7 +1,9 @@
 export default function Header() {
   return (
-    <header className="text-3xl">
-      <h1>Jennelle's Portfolio</h1>
+    <header>
+      <h1 className="font-honeypirls_regular text-5xl">
+        Jennelle's Portfolio
+      </h1>
     </header>
   )
 }

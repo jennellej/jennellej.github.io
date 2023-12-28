@@ -11,6 +11,9 @@ module.exports = {
       'jenny_gold': '#eb9a05',
       'jenny_purple': '#9eaacb',
     },
+    fontFamily: {
+      honeypirls_regular: ['Honeypirls Regular', 'sans-serif'], 
+    },
     extend: {},
   },
   plugins: [],
