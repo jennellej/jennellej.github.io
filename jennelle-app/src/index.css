@@ -6,3 +6,8 @@
     font-family: 'Honeypirls Regular';
     src: url('../public/fonts/Honeypirls Regular.otf');
 }
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('../public/fonts/Merriweather-Regular.ttf');
+}

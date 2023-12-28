@@ -13,6 +13,7 @@ module.exports = {
     },
     fontFamily: {
       honeypirls_regular: ['Honeypirls Regular', 'sans-serif'], 
+      merriweather_regular: ['Merriweather Regular', 'sans-serif'],
     },
     extend: {},
   },
