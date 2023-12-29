@@ -15,7 +15,7 @@ function App() {
       </div>
 
       <div className="flex-auto px-4 z-10 overflow-y-auto">
-        <BlogPost post={posts[0]} />
+        <BlogPost post={posts[1]} />
       </div>
 
       <Decoration num={4} />
