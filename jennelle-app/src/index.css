@@ -11,3 +11,23 @@
     font-family: 'Merriweather Regular';
     src: url('../public/fonts/Merriweather-Regular.ttf');
 }
+
+.blog_post h1 {
+    @apply text-3xl font-bold;
+}
+
+.blog_post h2 {
+    @apply text-2xl font-bold;
+}
+
+.blog_post h3 {
+    @apply text-xl font-bold;
+}
+
+.blog_post li {
+    @apply list-inside list-disc;
+}
+
+.blog_post a {
+    @apply text-jenny_gold hover:underline active:text-yellow-600;
+}
