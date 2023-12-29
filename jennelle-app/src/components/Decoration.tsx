@@ -18,7 +18,7 @@ export default function Decoration({ num }: { num?: number }) {
                     position: "absolute",
                     left: `${randomInt(100)}%`,
                     top: `${randomInt(100)}%`,
-                    transform: `scale(${randomInt(3) + 1})`,
+                    transform: `scale(${randomInt(3) + 1}) rotate(${randomInt(360)}deg)`,
                     opacity: `${randomInt(50) + 50}%`,
                     zIndex: 1,
                 }}
