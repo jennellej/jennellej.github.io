@@ -2,6 +2,7 @@ import BlogPost from "./components/BlogPost";
 import Decoration from "./components/Decoration";
 import Header from "./components/Header";
 import posts from "./blog/posts"
+import BlogBrowse from "./components/BlogBrowse";
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       </div>
 
       <div className="flex-auto px-4 z-10 overflow-y-auto">
-        <BlogPost post={posts[1]} />
+        <BlogBrowse />
       </div>
 
       <Decoration num={4} />
