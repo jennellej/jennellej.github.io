@@ -2,7 +2,7 @@ import Decoration from "./components/Decoration";
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 
-function App() {
+function App({ children }: { children?: React.ReactNode }) {
 
   return (
     <div 
@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <div className="flex-auto px-4 z-10 overflow-y-auto">
-        <Outlet />
+        {children || <Outlet />}
       </div>
 
       <Decoration num={4} />

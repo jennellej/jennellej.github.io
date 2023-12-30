@@ -8,11 +8,13 @@ import BlogBrowse from './components/BlogBrowse';
 import BlogPost from './components/BlogPost';
 import Home from './components/Home';
 import posts from './blog/posts';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <App> <ErrorPage /> </App>,
     children: [
       {
         path: '',
@@ -27,6 +29,11 @@ const router = createBrowserRouter([
         path: 'blog/:index',
         loader: ({ params }) => {
           const index = Number(params.index);
+
+          if (isNaN(index) || index < 0 || index >= posts.length) {
+            throw new Error('Invalid blog post index');
+          }
+
           return posts[index];
         },
         element: <BlogPost />,
