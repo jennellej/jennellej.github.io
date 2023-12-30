@@ -19,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '',
+        loader: () => posts,
         element: <Home />,
       },
       {
