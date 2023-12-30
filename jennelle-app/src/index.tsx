@@ -3,13 +3,44 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import BlogBrowse from './components/BlogBrowse';
+import BlogPost from './components/BlogPost';
+import Home from './components/Home';
+import posts from './blog/posts';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '',
+        element: <Home />,
+      },
+      {
+        path: 'blog',
+        loader: () => posts,
+        element: <BlogBrowse />,
+      },
+      {
+        path: 'blog/:index',
+        loader: ({ params }) => {
+          const index = Number(params.index);
+          return posts[index];
+        },
+        element: <BlogPost />,
+      }
+    ],
+  },
+])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

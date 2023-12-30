@@ -2,13 +2,12 @@ import { faClock, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+import { useLoaderData } from "react-router-dom";
+import { Post } from "../blog/posts";
 
-export default function BlogPost( { post } : { post : { 
-        title: string, 
-        date: Date,
-        tags: string[],
-        content: string,
-    } } ) {
+export default function BlogPost() {
+
+    const post = useLoaderData() as Post;
 
     const [postContent, setPostContent] = useState("");
     useEffect(() => {
@@ -16,9 +15,6 @@ export default function BlogPost( { post } : { post : {
             .then(response => response.text())
             .then(text => setPostContent(text));
     });
-
-    // Adjust date to local timezone
-    post.date.setMinutes(post.date.getMinutes() + post.date.getTimezoneOffset());
     
     return (
         <div className="flex flex-col gap-y-4">

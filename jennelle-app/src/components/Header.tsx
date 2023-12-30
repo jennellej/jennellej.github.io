@@ -1,6 +1,7 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Header() {
         </h1>
       </div>
 
-      {menuOpen && <NavMenu />}
+      {menuOpen && <NavMenu onClick={() => setMenuOpen(!menuOpen)} />}
     </header>
   )
 }
@@ -31,10 +32,11 @@ function MenuButton({ onClick }: { onClick?: () => void }) {
   )
 }
 
-function NavMenu() {
+function NavMenu({ onClick }: { onClick?: () => void }) {
   return (
     <nav className="flex flex-col gap-y-2 pl-5">
-      <a href="#">Home</a>
+      <Link to="/" onClick={onClick}>Home</Link>
+      <Link to="/blog" onClick={onClick}>Blog</Link>
       <a href="#">About</a>
       <a href="#">Projects</a>
       <a href="#">Contact</a>
