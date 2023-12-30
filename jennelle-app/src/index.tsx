@@ -9,6 +9,7 @@ import BlogPost from './components/BlogPost';
 import Home from './components/Home';
 import posts from './blog/posts';
 import ErrorPage from './components/ErrorPage';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
           return posts[index];
         },
         element: <BlogPost />,
-      }
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
+      },
     ],
   },
 ])

@@ -35,11 +35,30 @@ function MenuButton({ onClick }: { onClick?: () => void }) {
 function NavMenu({ onClick }: { onClick?: () => void }) {
   return (
     <nav className="flex flex-col gap-y-2 pl-5">
-      <Link to="/" onClick={onClick}>Home</Link>
-      <Link to="/blog" onClick={onClick}>Blog</Link>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <Link 
+        to="/" 
+        onClick={onClick}
+        className="text-lg text-jenny_gold 
+          hover:underline active:text-yellow-600"
+      >
+        Home
+      </Link>
+      <Link 
+        to="blog"
+        onClick={onClick}
+        className="text-lg text-jenny_gold 
+          hover:underline active:text-yellow-600"
+      >
+        Blog
+      </Link>
+      <Link 
+        to="contact"
+        onClick={onClick}
+        className="text-lg text-jenny_gold 
+          hover:underline active:text-yellow-600"
+      >
+        Contact
+      </Link>
     </nav>
   )
 }
