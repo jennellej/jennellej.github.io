@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import BlogBrowse from './components/BlogBrowse';
 import BlogPost from './components/BlogPost';
 import Home from './components/Home';
@@ -11,7 +11,7 @@ import posts from './blog/posts';
 import ErrorPage from './components/ErrorPage';
 import Contact from './components/Contact';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
