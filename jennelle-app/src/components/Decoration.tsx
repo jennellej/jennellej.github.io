@@ -19,7 +19,7 @@ export default function Decoration({ num }: { num?: number }) {
                     left: `${randomInt(100)}%`,
                     top: `${randomInt(100)}%`,
                     transform: `scale(${randomInt(3) + 1}) rotate(${randomInt(360)}deg)`,
-                    opacity: `${randomInt(50) + 50}%`,
+                    opacity: `${randomInt(25) + 25}%`,
                     zIndex: 1,
                 }}
             />
