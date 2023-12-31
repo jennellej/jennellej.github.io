@@ -10,6 +10,8 @@ import Home from './components/Home';
 import posts from './blog/posts';
 import ErrorPage from './components/ErrorPage';
 import Contact from './components/Contact';
+import Gallery from './components/Gallery';
+import photos from './gallery/photos';
 
 const router = createHashRouter([
   {
@@ -39,6 +41,11 @@ const router = createHashRouter([
           return posts[index];
         },
         element: <BlogPost />,
+      },
+      {
+        path: 'gallery',
+        loader: () => photos,
+        element: <Gallery />,
       },
       {
         path: 'contact',

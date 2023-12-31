@@ -52,6 +52,14 @@ function NavMenu({ onClick }: { onClick?: () => void }) {
         Blog
       </Link>
       <Link 
+        to="gallery"
+        onClick={onClick}
+        className="text-lg text-jenny_gold 
+          hover:underline active:text-yellow-600"
+      >
+        Gallery
+      </Link>
+      <Link 
         to="contact"
         onClick={onClick}
         className="text-lg text-jenny_gold 
