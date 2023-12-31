@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef4fbed8.css",
-    "main.js": "/static/js/main.076a5f53.js",
+    "main.css": "/static/css/main.45cbcbcf.css",
+    "main.js": "/static/js/main.2b60d4b0.js",
     "static/js/787.51f3436c.chunk.js": "/static/js/787.51f3436c.chunk.js",
     "static/media/Merriweather-Regular.ttf": "/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
     "static/media/Honeypirls Regular.otf": "/static/media/Honeypirls Regular.b049f2279cf5e1b41817.otf",
+    "static/media/bunny.webp": "/static/media/bunny.e625538be172f50676f8.webp",
     "static/media/flower.svg": "/static/media/flower.94d0a438f110cb687f6ad86b84320354.svg",
     "static/media/squiggle.svg": "/static/media/squiggle.392a0947a4b0863541ece99ef174c819.svg",
     "static/media/circle.svg": "/static/media/circle.98bf38d76cb39750bba78fef88719b12.svg",
     "index.html": "/index.html",
     "static/media/blog1.md": "/static/media/blog1.de728c11b06ecdd0baaa.md",
     "static/media/blog2.md": "/static/media/blog2.5b45d601487dad23205b.md",
-    "main.ef4fbed8.css.map": "/static/css/main.ef4fbed8.css.map",
-    "main.076a5f53.js.map": "/static/js/main.076a5f53.js.map",
+    "main.45cbcbcf.css.map": "/static/css/main.45cbcbcf.css.map",
+    "main.2b60d4b0.js.map": "/static/js/main.2b60d4b0.js.map",
     "787.51f3436c.chunk.js.map": "/static/js/787.51f3436c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef4fbed8.css",
-    "static/js/main.076a5f53.js"
+    "static/css/main.45cbcbcf.css",
+    "static/js/main.2b60d4b0.js"
   ]
 }
