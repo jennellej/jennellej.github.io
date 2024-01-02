@@ -31,3 +31,7 @@
 .blog_post a {
     @apply text-jenny_gold hover:underline active:text-yellow-600;
 }
+
+.blog_post blockquote {
+    @apply border-l-4 border-jenny_gold pl-4;
+}
