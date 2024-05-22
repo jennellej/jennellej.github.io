@@ -1,7 +1,8 @@
 export default function CV() {
     return (
-        <div className="px-4 flex flex-row justify-between">
+        <div className="px-4 flex flex-col sm:flex-row justify-between gap-6">
             <h1 className="text-5xl font-bold">CV</h1>
+
             <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-2xl">Education</h2>

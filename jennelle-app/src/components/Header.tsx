@@ -23,7 +23,7 @@ export default function Header() {
 
 function MenuButton({ onClick }: { onClick?: () => void }) {
   return (
-    <button className="md:invisible m-2 h-10 w-10 rounded-md
+    <button className="sm:invisible m-2 h-10 w-10 rounded-md
     hover:bg-blue-900 active:bg-blue-800
       transition-colors duration-200 absolute left-3 top-12"
       onClick={onClick}>
