@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01da116c.css",
-    "main.js": "/static/js/main.0a054e07.js",
+    "main.css": "/static/css/main.10fea25e.css",
+    "main.js": "/static/js/main.be169786.js",
     "static/js/787.51f3436c.chunk.js": "/static/js/787.51f3436c.chunk.js",
     "static/media/Merriweather-Regular.ttf": "/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
     "static/media/Honeypirls Regular.otf": "/static/media/Honeypirls Regular.b049f2279cf5e1b41817.otf",
@@ -12,12 +12,12 @@
     "index.html": "/index.html",
     "static/media/blog1.md": "/static/media/blog1.52eff2bb1eb17850d228.md",
     "static/media/blog2.md": "/static/media/blog2.5b45d601487dad23205b.md",
-    "main.01da116c.css.map": "/static/css/main.01da116c.css.map",
-    "main.0a054e07.js.map": "/static/js/main.0a054e07.js.map",
+    "main.10fea25e.css.map": "/static/css/main.10fea25e.css.map",
+    "main.be169786.js.map": "/static/js/main.be169786.js.map",
     "787.51f3436c.chunk.js.map": "/static/js/787.51f3436c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01da116c.css",
-    "static/js/main.0a054e07.js"
+    "static/css/main.10fea25e.css",
+    "static/js/main.be169786.js"
   ]
 }
