@@ -5,7 +5,6 @@ import BlogPreview from "./BlogPreview";
 export default function Home() {
     return (
         <div className="flex flex-col gap-6">
-            <h1 className="text-4xl font-bold text-center">Home</h1>
             <p>Welcome to Jennelle's Portfolio!</p>
             <div className="flex flex-col gap-1">
                 <h2 className="text-2xl font-bold">Latest Blog Post</h2>

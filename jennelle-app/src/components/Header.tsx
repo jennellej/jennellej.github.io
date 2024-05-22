@@ -7,16 +7,50 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="p-3 px-4 flex flex-col">
-      <div className="flex flex-row gap-3 flex-nowrap items-center">
-        <MenuButton onClick={() => setMenuOpen(!menuOpen)} />
-
-        <h1 className="font-honeypirls_regular text-4xl md:text-5xl">
-          Jennelle's Portfolio
-        </h1>
+    <header className="p-10 flex flex-col gap-10">
+      <Link
+        to="/"
+        className="text-4xl md:text-5xl text-center">
+        Jennelle Jagdeo
+      </Link>
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-12 self-center text-center">
+        <Link 
+          to="/blog"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          Essays
+        </Link>
+        <Link 
+          to="/blog"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          Creative Work
+        </Link>
+        <Link 
+          to="/blog"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          Articles
+        </Link>
+        <Link 
+          to="/cv"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          CV
+        </Link>
+        <Link 
+          to="/about"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          About
+        </Link>
+        <Link 
+          to="/contact"
+          className="text-xl font-bold underline hover:text-slate-200 active:text-slate-300"
+        >
+          Contact
+        </Link>
       </div>
-
-      {menuOpen && <NavMenu onClick={() => setMenuOpen(!menuOpen)} />}
     </header>
   )
 }

@@ -12,6 +12,8 @@ import ErrorPage from './components/ErrorPage';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import photos from './gallery/photos';
+import CV from './components/CV';
+import About from './components/About';
 
 const router = createHashRouter([
   {
@@ -50,6 +52,14 @@ const router = createHashRouter([
       {
         path: 'contact',
         element: <Contact />,
+      },
+      {
+        path: 'cv',
+        element: <CV />,
+      },
+      {
+        path: 'about',
+        element: <About />,
       },
     ],
   },
