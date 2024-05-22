@@ -25,7 +25,7 @@ function MenuButton({ onClick }: { onClick?: () => void }) {
   return (
     <button className="sm:invisible m-2 h-10 w-10 rounded-md
     hover:bg-blue-900 active:bg-blue-800
-      transition-colors duration-200 absolute left-3 top-12"
+      transition-colors duration-200 absolute top-0 left-0"
       onClick={onClick}>
       <FontAwesomeIcon icon={faBars} size="lg" />
     </button>
